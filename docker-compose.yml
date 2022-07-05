@@ -1,11 +1,11 @@
 version: '3.8'
 services:
   blog-cnr:
-    image: ghost:4-alpine
+    image: ghost:latest
     restart: always
     ports:
       - 80:2368
     environment:
-      - url: https://blog.ankitsanghvi.in
+      url: https://blog.ankitsanghvi.in
     volumes:
       - /path/to/ghost/blog:/var/lib/ghost/content
